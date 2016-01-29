@@ -1,0 +1,23 @@
+body {
+	font-family: "PTSans NarrowBold", sans-serif;
+	font-style: normal;
+	font-size:14px;
+	line-height:24px;
+	font-weight: bold;
+	text-transform:uppercase;
+	color: #000000;
+}
+
+.breadcrumbs li {
+    color:#aba9a7;
+}
+
+h1 {
+	font-size:30px;
+	line-height:auto;
+}
+
+h2 {
+	font-size:24px;
+	line-height:auto;
+}
