@@ -1,9 +1,7 @@
 body {
 	font-family: "PTSans NarrowBold", sans-serif;
 	font-style: normal;
-	font-size:14px;
-	line-height:24px;
-	font-weight: bold;
+	font-weight: normal;
 	color: #000000;
 }
 
@@ -22,11 +20,6 @@ body {
 	line-height:auto;
 }
 
-h2 {
-	font-size:24px;
-	line-height:auto;
-}
-
 .clearfix::after {
   content: "";
 
@@ -36,7 +29,7 @@ h2 {
 
 .container {
 	width: 940px;
-    padding: 0 10px;
+  padding: 0 10px;
 	margin: 0 auto;
 	text-transform:uppercase;
 }
@@ -68,15 +61,61 @@ h2 {
 }
 
 .gallery-content {
-	float: left;
 	width: 460px;
-    margin-right: 20px;
+  float: left; 
+  margin-right: 80px;
+}
+
+.big-img {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+}
+
+.small-img img{
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin-bottom: 50px;
+  margin-right: 10px;
 }
 
 .content {
-	width: 460px;
+	width: 400px;
+  float: right;
+  font-size:14px;
+  line-height:24px;
 }
 
+.content .code {
+  margin-left: 50px;
+  color: #b3b2b2;
+}
+.content p {
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
+
+.content .price {
+  width: 109px;
+  height: 40px;
+  padding: 12px 20px;
+  background-color: #e5e5e5;
+  color: #000000;
+  font-weight: bold;
+  box-sizing:border-box;
+}
+
+.content .button-buy {
+  height: 43px;
+  width: 79px;
+  background-color: #000000;
+  color:#ffffff;
+  box-sizing:border-box;
+}
+ .content h2 {
+  margin-top: 60px;
+  margin-bottom: 36px;
+  font-size:24px;
+  line-height:auto;
+ }
 
 
 
@@ -84,12 +123,13 @@ h2 {
 
 
 .main-footer {
+  clear: both;
   margin-top: 65px;
   padding-top: 60px;
-    padding-bottom: 40px;
-    color: white;
-    background-color: #232323;
-    font-size: 14px;
+  padding-bottom: 40px;
+  color: white;
+  background-color: #232323;
+  font-size: 14px;
 }
 
 .footer-contacts {
