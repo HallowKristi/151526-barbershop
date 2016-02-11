@@ -1,5 +1,5 @@
 body {
-	font-family: "PTSans NarrowBold", "Arial", sans-serif;
+	font-family: "PT Sans NarrowBold", "Arial", sans-serif;
 	font-style: normal;
 	font-size:14px;
 	font-weight: bold;
@@ -158,17 +158,37 @@ body {
 
 .breadcrumbs li {
     color:#aba9a7;
+    position: relative;
     display: inline-block;
     margin-top: 30px;
     margin-bottom: 50px;
-    margin-right: 30px;
+    padding-right: 30px;
     font-size: 14px;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top:4px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform:rotate(45deg);
+}
+
+.breadcrumbs .current::after {
+  display: none;
 }
 
 .breadcrumbs a {
 	list-style: none;
 	color: #000000;
 	text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
 }
 
 .breadcrumbs {
@@ -250,6 +270,11 @@ article {
 	min-height: 288px;
 	background-color: #ffffff; 
 	margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+article h2 {
+  text-align: center;
 }
 
 article:nth-child (3n+1) {
