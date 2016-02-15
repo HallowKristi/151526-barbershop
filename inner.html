@@ -5,7 +5,7 @@
 	<title>Барбершоп</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style-inner.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="inner-page">
 <header class="main-header">
@@ -25,7 +25,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li class="active">
-              <a href="#">Магазин</a>
+              <span>Магазин</span>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -50,68 +50,85 @@
      	<form class="brand" action="index.html" method="post">
 					<span>Производители:</span>										
 					<ul>
-					<li><label><input type="checkbox" name="baxter of california" checked>Baxter of California</label></li>
-					<li><label><input type="checkbox" name="mr natty">MR Natty</label></li>
-					<li><label><input type="checkbox" name="suavecito" checked>Suavecito</label></li>
-					<li><label><input type="checkbox" name="malin+goetz">Malin+Goetz</label></li>
-					<li><label><input type="checkbox" name="murray's">Murray's</label></li>
-					<li><label><input type="checkbox" name="american crew" checked>American Crew</label></li>
+					<li><label class="checkbox"><input type="checkbox" name="baxter of california" checked>Baxter of California<span class="checkbox-indicator"></span></label></li>
+					<li><label class="checkbox"><input type="checkbox" name="mr natty">MR Natty <span class="checkbox-indicator"></span></label></li>
+					<li><label class="checkbox"><input type="checkbox" name="suavecito" checked>Suavecito <span class="checkbox-indicator"></span></label></li>
+					<li><label class="checkbox"><input type="checkbox" name="malin+goetz">Malin+Goetz <span class="checkbox-indicator"></span></label></li>
+					<li><label class="checkbox"><input type="checkbox" name="murray's">Murray's <span class="checkbox-indicator"></span></label></li>
+					<li><label class="checkbox"><input type="checkbox" name="american crew" checked>American Crew <span class="checkbox-indicator"></span></label></li>
 					</ul>
 				</form>	 	
      	<form class="group" action="index.html" method="post">
 					<span>Группы товаров:</span>										
 					<ul>
-					<li><label><input type="radio" name="shaving" checked>Бритвенные принадлежности</label></li>
-					<li><label><input type="radio" name="care">Средства для ухода</label></li>
-					<li><label><input type="radio" name="accessories" checked>Аксессуары</label></li>
+					<li><label class="radio"><input type="radio" name="shaving" checked>Бритвенные принадлежности <span class="checkbox-indicator"></span></label></li>
+					<li><label class="radio"><input type="radio" name="care">Средства для ухода <span class="checkbox-indicator"></span></label></li>
+					<li><label class="radio"><input type="radio" name="accessories" checked>Аксессуары <span class="checkbox-indicator"></span></label></li>
 					</ul>
 				</form> 
           <a class="show" href="#">Показать</a>
         </div>
          <div class="products">
          	<article>
-         		<img class="travel-set" src="img/for_traveling.jpg" width="220" height="165" alt="Набор для путешествий">
-         		<h2>Набор для путешествий «Baxter of California»</h2>  			
+         		<a href="#"><img class="travel-set" src="img/for_traveling.jpg" width="220" height="165" alt="Набор для путешествий"></a>
+            <div class="name">
+         		<a href="#"><span class="goods">Набор для путешествий</span><br><span>«Baxter of California»</span></a> 		
+            </div>	
          			<span class="price">2900 руб.</span>
          	<a class="button-buy" href="#">Купить</a> 	
          	</article>         	
          	<article>
-         		<img class="conditioner" src="img/conditioner.jpg" width="220" height="165" alt="Увлажняющий кондиционер">
-         		<h2>Увлажняющий кондиционер «Baxter of California»</h2>        			
+         		<a href="#"><img class="conditioner" src="img/conditioner.jpg" width="220" height="165" alt="Увлажняющий кондиционер">
+            <div class="name">
+            <a href="#"><span class="goods">Увлажняющий конsдиционер</span><br><span>«Baxter of California»</span></a>
+            </div>        			
          			<span class="price">750 руб.</span>
-          <a class="button-buy" href="#">Купить</a>     		
+          <a class="button-buy" href="#">Купить</a>
+          </a>     		
          	</article>
          	<article>
-         		<img class="gel1" src="img/gel.jpg" width="220" height="165" alt="Гель для волос">
-         		<h2>Гель для волос «Suavecito»</h2>         			
+         		<a href="#"><img class="gel1" src="img/gel.jpg" width="220" height="165" alt="Гель для волос">
+            <div class="name">
+            <a href="#"><span class="goods">Гель для волос</span><br><span>«Suavecito»</span></a>
+            </div>        			
          			<span class="price">290 руб.</span>
-          <a class="button-buy" href="#">Купить</a>  
+          <a class="button-buy" href="#">Купить</a> 
+          </a> 
          	</article>
          	<article>
-         		<img class="gel2" src="img/gel_2.jpg" width="220" height="165" alt="Гель для укладки волос">
-         		<h2>Гель для укладки волос «American Crew»</h2>      			
+         		<a href="#"><img class="gel2" src="img/gel_2.jpg" width="220" height="165" alt="Гель для укладки волос">
+            <div class="name">
+         		<a href="#"><span class="goods">Гель для укладки волос</span><br><span>«American Crew»</span></a>
+            </div>     			
          			<span class="price">500 руб.</span>
-          <a class="button-buy" href="#">Купить</a>      		
+          <a class="button-buy" href="#">Купить</a>  
+          </a>    		
          	</article>
          	<article>
-         		<img class="gel3" src="img/gel_3.jpg" width="220" height="165" alt="Гель для волос">
-         		<h2>Гель для волос «American Crew»</h2>          			
+         		<a href="#"><img class="gel3" src="img/gel_3.jpg" width="220" height="165" alt="Гель для волос">
+            <div class="name">
+         		<a href="#"><span class="goods">Гель для волос</span><br><span>«American Crew»</span></a>
+            </div>          			
          			<span class="price">300 руб.</span>
-         	<a class="button-buy" href="#">Купить</a>       		
+         	<a class="button-buy" href="#">Купить</a> 
+          </a>      		
          	</article>
          	<article>
-         		<img class="shaving-set" src="img/shave.jpg" width="220" height="165" alt="Набор для бритья">
-         		<h2>Набор для бритья «Baxter of California»</h2>        			
+         		<a href="#"><img class="shaving-set" src="img/shave.jpg" width="220" height="165" alt="Набор для бритья">
+            <div class="name">
+         		<a href="#"><span class="goods">Набор для бритья</span><br><span>«Baxter of California»</span>
+            </div>        			
          			<span class="price">3900 руб.</span>
-         	<a class="button-buy" href="#">Купить</a>      	
+         	<a class="button-buy" href="#">Купить</a> 
+          </a>     	
          	</article>
-         </div>
-         <ul class="page">
-         	<li><a href="#">1</a></li>
-         	<li class="active"><a href="#">2</a></li>
-         	<li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
+          <ul class="page">
+          <a href="#"><li>1</li></a>
+          <li class="active">2</li>
+          <a href="#"><li>3</li></a>
+          <a href="#"><li>4</li></a>
          </ul>
+         </div>         
     </main>
 <footer class="main-footer">
       <div class="container clearfix">
@@ -123,9 +140,9 @@
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#"><img src="img/vk.png" width="43" height="43" alt="Вконтакте"></a>
-          <a class="social-btn social-btn-fb" href="#"><img src="img/fb.png" width="43" height="43" alt="Вконтакте"></a>
-          <a class="social-btn social-btn-inst" href="#"><img src="img/inst.png" width="43" height="43" alt="Вконтакте"></a>
+          <a class="social-btn social-btn-vk" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-inst" href="#"></a>
         </section>
         <section class="footer-copyright">
           <p>Разработано:</p>
